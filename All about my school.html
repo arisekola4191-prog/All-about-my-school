@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All About My — JUPEB News, A-Level Updates & Coaching</title>
+  <meta name="description" content="All About My — Get the latest JUPEB news, A-Level updates, and coaching tips to help you succeed." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+
+    header {
+      background: #002b5c;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+
+    header h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    header p { font-size: 1rem; color: #dce6f2; }
+
+    nav {
+      background: #004080;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+
+    .hero {
+      text-align: center;
+      padding: 60px 10%;
+      background: linear-gradient(to right, #004080, #002b5c);
+      color: white;
+    }
+
+    .hero h2 { font-size: 2rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.1rem; margin-bottom: 25px; }
+    .hero a {
+      background: #ffd700;
+      color: #002b5c;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 50px 10%;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #004080;
+    }
+
+    .news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #002b5c; margin-bottom: 10px; }
+
+    footer {
+      background: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px 10%;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Floating WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float i { margin-top: 13px; }
+
+    /* Floating menu bubble */
+    .whatsapp-menu {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 101;
+      padding: 10px;
+      width: 200px;
+    }
+
+    .whatsapp-menu a {
+      display: block;
+      color: #002b5c;
+      text-decoration: none;
+      padding: 8px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-menu a:hover { background: #f0f0f0; }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 1.6rem; }
+      header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>All About My</h1>
+    <p>JUPEB News • A-Level Updates • Coaching & Study Tips</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#coaching">Coaching</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to All About My</h2>
+    <p>Your trusted source for JUPEB updates, A-Level coaching tips, and student success guides.</p>
+    <a href="#news">Explore Latest Updates</a>
+  </section>
+
+  <section id="news">
+    <h2 class="section-title">Latest JUPEB & A-Level News</h2>
+    <div class="news">
+      <div class="card">
+        <h3>JUPEB 2025 Registration Begins</h3>
+        <p>Get the full registration guide, important dates, and how to apply for JUPEB 2025.</p>
+      </div>
+      <div class="card">
+        <h3>Top Universities Accepting JUPEB</h3>
+        <p>Explore Nigerian universities that accept JUPEB for 200 level direct entry.</p>
+      </div>
+      <div class="card">
+        <h3>JUPEB vs IJMB: Which is Better?</h3>
+        <p>We explain the major differences between JUPEB and IJMB to help you choose wisely.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="coaching">
+    <h2 class="section-title">Coaching & Resources</h2>
+    <p>We offer study materials, past questions, and personalized guidance to help you pass JUPEB with ease.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p><strong>All About My</strong> is a media and educational platform dedicated to sharing reliable information about JUPEB, A-Level programs, and general academic updates. We help students prepare, stay informed, and succeed.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Connect With Us</h2>
+    <p>Join our learning community for updates, materials, and coaching support.</p>
+    <p>
+      📢 <a href="https://whatsapp.com/channel/0029VbBKJlHBPzjXHe7rUz30" target="_blank">Join our WhatsApp Channel</a><br>
+      💬 <a href="https://chat.whatsapp.com/LFFt23thbIpDK5sC3J1jlV?mode=wwc" target="_blank">Join our JUPEB Private Group</a><br>
+      ☎️ <a href="https://wa.me/2347077905181" target="_blank">Chat with Admin on WhatsApp</a><br>
+      ▶️ <a href="https://youtube.com" target="_blank">Subscribe on YouTube</a><br>
+      📧 <a href="mailto:allaboutmy@gmail.com">Email Us</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 All About My. All Rights Reserved.</p>
+    <p>Made with 💙 for JUPEB & A-Level Students.</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="#" class="whatsapp-float" id="whatsapp-btn" title="Join our WhatsApp Community">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating WhatsApp Menu -->
+  <div class="whatsapp-menu" id="whatsapp-menu">
+    <a href="https://whatsapp.com/channel/0029VbBKJlHBPzjXHe7rUz30" target="_blank">📢 Channel Updates</a>
+    <a href="https://chat.whatsapp.com/LFFt23thbIpDK5sC3J1jlV?mode=wwc" target="_blank">💬 JUPEB Private Group</a>
+    <a href="https://wa.me/2347077905181" target="_blank">☎️ Chat with Admin</a>
+  </div>
+
+  <script>
+    // Toggle WhatsApp menu when button is clicked
+    const btn = document.getElementById('whatsapp-btn');
+    const menu = document.getElementById('whatsapp-menu');
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
+
+</body>
+</html>
